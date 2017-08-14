@@ -1,0 +1,92 @@
+.comboTreeView {
+  padding: 2px;
+  height: 2em;
+  max-width: 100%;
+  border-color: #dfdfdf;
+  color: #000;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 1px;
+  line-height: 15px;
+  cursor: default;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 95%;
+  padding-top: 4px;
+  padding-left: 4px;
+  overflow: hidden;
+  background-image: url('images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: right 8px;
+  background-size: 13px 6px;
+}
+
+.comboTreeView .textItem {
+  margin-right: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.focus {
+  border-color: #aaa;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.comboTreeViewList {
+  position: absolute;
+  background: #fff;
+  border: #aaa 1px solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  min-height: 200px;
+}
+
+.comboTreeViewList div.scroll {
+  overflow: auto;
+}
+
+.comboTreeViewList ul {
+  margin: 0;
+}
+
+.comboTreeViewList li {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.comboTreeViewList li div {
+  cursor: pointer;
+  padding: 4px;
+  white-space: nowrap;
+  padding-right: 25px;
+}
+
+.comboTreeViewList li div:hover {
+  background-color: #ddd;
+}
+
+.comboTreeViewList li.collapsed {
+  background-image: url('images/right.png');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 2px 5px;
+}
+
+.comboTreeViewList li.expanded {
+  background-image: url('images/down.png');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+}
+
+.comboTreeViewList div.selected {
+  font-weight: bold;
+}
